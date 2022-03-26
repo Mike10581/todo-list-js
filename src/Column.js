@@ -2,7 +2,7 @@ function Column(props) {
     return (
         <div className={props.status} key={props.status}>
             <strong>{props.status}</strong>
-            {props.tasks.filter((task) => (props.tasks.status === props.status)).map(task => (
+            {props.tasks.filter((task) => (task.status === props.status)).map(task => (
                     <div key={task.id}>
                         {(task.status !== props.statusType[0]) ? <button onClick={() => props.changeStatusBackward(task.id)}
                                                                          className='statusButton'>&#8592;</button> : <></>}
