@@ -1,38 +1,165 @@
 .App {
+  background-color: #8D99AE;
+  color: #2B2D42;
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  align-items: center;
+  align-content: center;
+}
+
+.PropsSending,
+.useStateIntro,
+.counter,
+.toDoListSimple,
+.toDoListFourStatus,
+.toDoListFourStatusGrid {
+  border: solid 1px black;
+  padding: 20px;
+  margin: 5px;
+}
+
+.toDoListFourStatus li{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*align-content: space-between;*/
+}
+
+.toDoListSimple li div,
+.toDoListFourStatus li div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*align-content: space-between;*/
+}
+
+.toDoListSimple li div div,
+.toDoListFourStatus li div div{
+  align-content: space-between;
+}
+
+button {
+  margin: 2px 3px;
+}
+
+.counter button,
+.toDoListSimple button,
+.toDoListFourStatus button,
+.toDoListFourStatusGrid button{
+  background-color: #008000;
+  border-color: #006400;
+  color: #EDF2F4;
+}
+
+.toDoListSimple button:first-child {
+  width: 60px;
+}
+
+.toDoListSimple .stick {
+  border: none;
+  padding: 3px;
+  /*border-color: #008000;*/
+}
+
+.toDoListFourStatus .statusButton
+{
+  background-color: #8D99AE;
+  border-color: #2B2D42;
+  color: #EDF2F4;
+
+}
+
+.toDoListFourStatus .statusButton:disabled,
+.toDoListFourStatusGrid .statusButton{
+  background-color: #2B2D42;
+
+  color: #EDF2F4;
+
+}
+
+.PropsSending button,
+.useStateIntro button,
+.counter .delete,
+.toDoListSimple .delete,
+.toDoListFourStatus .delete,
+.toDoListFourStatusGrid .delete
+{
+  background-color: #EF233C;
+  border-color: #D90429;
+  color: #EDF2F4;
+  font-weight: 600;
+}
+
+.toDoListSimple button:disabled,
+.toDoListFourStatus button:disabled {
+  background-color: #8D99AE;
+}
+.statusTable {
+  display: flex;
+  flex-direction: row;
+}
+
+.statusTable > div{
+  border: solid 1px black;
+  padding: 3px;
+  margin: 3px -1px;
+}
+.statusTable > div {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.done div:first-child {
+  text-decoration: line-through;
+}
+
+.statusTable div strong{
+  width: 100%;
   text-align: center;
 }
 
+.statusTable div div{
+  width: 100%;
+}
+
+.statusTable .todo{
+  /*background-color: #F96264;*/
+  background-image: linear-gradient(to right, #F96264, #F96264, #F96264, #F47E3E);
+}
+
+.statusTable .progress{
+  /*background-color: #F9AC4D;*/
+  background-image: linear-gradient(to right, #F47E3E, #F47E3E, #F47E3E, #FAD275);
+}
+
+.statusTable .review{
+  /*background-color: #FAD275;*/
+  background-image: linear-gradient(to right, #FAD275, #FAD275, #FAD275, #6DC5AB);
+}
+
+.statusTable .done{
+  background-color: #6DC5AB;
+  text-decoration: none;
+
+}
+
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /*height: 40vmin;*/
+  /*pointer-events: none;*/
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*background-color: #282c34;*/
+  /*min-height: 100vh;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*font-size: calc(10px + 2vmin);*/
+  /*color: white;*/
 }
 
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /*color: #61dafb;*/
 }
