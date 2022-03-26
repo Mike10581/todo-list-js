@@ -6,12 +6,12 @@ const initialToDoList = [
     {
         id: 'tdlfs0',
         title: 'Learn JS Syntax',
-        status: 'todo' //progress, review, done
+        status: 'done' //progress, review, done
     },
     {
         id: 'tdlfs1',
         title: 'Learn Express JS',
-        status: 'todo' //progress, review, done
+        status: 'review' //progress, review, done
     },
     {
         id: 'tdlfs2',
@@ -26,7 +26,7 @@ const initialToDoList = [
     {
         id: 'tdlfs4',
         title: 'Practice JS',
-        status: 'todo' //progress, review, done
+        status: 'progress' //progress, review, done
     },
 ]
 
